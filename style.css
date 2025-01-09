@@ -1,0 +1,255 @@
+/* Styles globaux */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+ 
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+  }
+  .style__accueil{
+
+    padding: 0;
+    margin: 0;
+    background-image: url(accueil__img.jpg);
+   background-repeat: no-repeat;
+    background-size: cover;
+  background-position: center;
+   height: 140vh;
+  
+    
+
+  }
+
+/* contact style */
+
+  .header__contact{
+    background: linear-gradient(to right, rgb(88, 0, 0) , rgb(153, 1, 1));
+
+  }
+
+
+
+  form{  
+    margin-top: 5rem;
+background-color: #fff;
+border-radius: 1rem;
+box-shadow: 2px 2px 10px  black  ;
+
+  }
+  #id__contact{
+    color: black;
+    display: inline;
+    margin: 0.3rem;
+    font-family: 'Segoe UI', sans-serif, serif, Verdana, ;
+    font-weight: bold;
+    font-size: 20px ;
+    text-align: center;
+   
+  }
+.btn__contact{
+    font-size:16px ;
+    text-decoration: none;
+    color: #ffffff;
+    background: linear-gradient(to right, rgb(88, 0, 0) , rgb(153, 1, 1 ));
+    border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  font-family: Arial,sans-serif , Helvetica ;
+  border-radius: 10px;
+
+}
+
+
+
+
+
+
+  
+
+  header {
+    backdrop-filter: blur(30px);
+    box-shadow: 0 0 2px rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: #ff6702; */
+    color: #fff;
+    padding: 3rem 2rem;
+  }
+  
+   .logo {
+    color: #fff;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bold;
+    text-shadow: 0 10px 20px   black;
+
+  }
+  
+  header nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  header nav ul li {
+    margin-left: 1rem;
+  }
+  
+  header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  header nav ul li a:hover {
+    padding: 4px 4px;
+    border-radius: 7px;
+    color: #9b0000;
+    background-color: #fff;
+    font-weight: bold;
+    border: none;
+
+  }
+  
+  .menu-toggle {
+    padding: 0.4rem;
+    margin: 0;
+    display: flex;
+    justify-content: end;
+    display: none;
+    font-size: 1.5rem;
+    color:  #9b0000;
+    cursor: pointer;
+ background-color: #fff;
+ border-radius: 5px;
+border: none;
+
+  }
+
+
+
+  .menu-toggle:hover{
+    background: none;
+    color: #fff;
+
+  }
+  
+  #hero {
+
+   text-shadow: 0 0 10px rgb(0, 0, 0);
+    color: #fff;
+    text-align: center;
+    padding: 5rem 1rem;
+  }
+  
+  #hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  #hero .btn {
+   margin-top: 5rem;
+   margin-bottom: 20rem;
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    background-color: #060020;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+    text-shadow: none;
+  }
+  
+  #hero .btn:hover {
+    background: #ffffff;
+    color: #060020;
+   text-shadow: 0 0 30px rgb(255, 255, 255);
+  }
+  
+  section {
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+  
+  #portfolio{
+ padding: 0;
+    margin: 0 auto;
+  }
+   .gallery {
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+  
+  #portfolio .item {
+    background: #f4f4f4;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  footer {
+    backdrop-filter: blur(30px);
+    border-radius: 5rem;
+    color: #fff;
+    text-align: center;
+  padding: 1rem;
+margin: 1rem ;
+ 
+    
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .menu-toggle {
+      display: block;
+    }
+  
+    header nav {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    header nav.active {
+      display: flex;
+    }
+  
+    header nav ul {
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    header nav ul li {
+      margin: 0.5rem 0;
+    }
+  
+    #hero h1 {
+      font-size: 2rem;
+    }
+  
+    #portfolio .gallery {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .non__lien{
+  padding: 4px 4px;
+    background-color: #f4f4f4;
+    border-radius: 7px;
+    cursor: default;
+    color: #9b0000;
+
+
+  }
